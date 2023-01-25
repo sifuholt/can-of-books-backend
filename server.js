@@ -43,8 +43,8 @@ app.get('/', (request, response, next) => {
 app.get('/book', getBooks);
 app.post('/books', postBook);
 app.delete('/books/:id', deleteBook);
-app.put('/books/:id'), putBook
-;
+app.put('/books/:id', putBook);
+
 // code that runs out of order, waiting on model
 async function getBooks(request, response, next) {
 
