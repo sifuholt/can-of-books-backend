@@ -5,7 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
-const Book = require('./models/book.js');
+const Book = require('./models/books.js');
 
 
 // middleware
@@ -41,8 +41,10 @@ app.get('/', (request, response, next) => {
 
 // call routes
 app.get('/book', getBooks);
-app.get('')
-
+app.post('/books', postBook);
+app.delete('/books/:id', deleteBook);
+app.put('/books/:id'), putBook
+;
 // code that runs out of order, waiting on model
 async function getBooks(request, response, next) {
 
