@@ -40,7 +40,7 @@ app.get('/', (request, response, next) => {
 });
 
 // call routes
-app.get('/book', getBooks);
+app.get('/books', getBooks);
 app.post('/books', postBook);
 app.delete('/books/:id', deleteBook);
 app.put('/books/:id', putBook);

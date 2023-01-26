@@ -38,11 +38,11 @@ async function seed() {
     status: 'Done'
     
   });
-  await Book.create({
-    title: 'The Sacred Mushroom & the Cross',
-    author: 'John M. Allegro',
-    
-  })
+  // await Book.create({
+    // title: 'The Sacred Mushroom & the Cross',
+    // author: 'John M. Allegro',
+    // 
+  // })
 
   mongoose.disconnect();
 }
